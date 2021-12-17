@@ -1,11 +1,19 @@
 <%- include('partials/header'); %> 
     <h1>Home</h1>
-    <p><%= homeContent %> </p>
-    <% posts.forEach((element)=> {%>
+    <p class="writings"><%= homeContent %> </p>
+    <div class="startBlog"><h1>Blogs</h1></div>
+    <% listItems.forEach((element)=> {%>
         <h3><%= element.title %> </h3>
-        <p>
-            <%= element.post.substring(0,100)+" ..." %> 
-            <a href="/post/<%= element.title %> ">Read More</a>
-        </p>
+        <div class="contents">
+            <div class="content writings">
+                <%= element.body.substring(0,100)+" ..." %> 
+                <a href="/post/<%= element._id %> ">Read More</a>
+            </div>
+            <div class="delete">
+                <form action="/delete" method="post">
+                        <button class="btn btn-blue-grey px-4 button" name="button" value="<%= element._id %>" onchange="this.form.submit()"><i class="fas fa-minus-circle"></i></button>
+                </form>
+            </div>
+        </div>
     <% }) %> 
 <%- include('partials/footer'); %> 

@@ -1,4 +1,25 @@
 <%- include('partials/header') %>
     <h1>Contact</h1>
-    <p><%= contactContent %> </p>
+    <div class="contactSection">
+        <div class="form">
+            <form action="/contact" method="post">
+                <div class="form-group">
+                    <label class="writings" for="exampleFormControlInput1">Name</label>
+                    <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name"">
+                  </div>
+                <div class="form-group">
+                  <label class="writings" for="exampleFormControlInput2">Email address</label>
+                  <input name="email" type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="writings" for="exampleFormControlTextarea1">Any Suggestion</label>
+                  <textarea name="suggestion" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button name="button" type="submit" class="contactButton btn btn-success">Contact</button>
+              </form>
+        </div>
+        <div class="contact-img-div">
+            <img class="contact-img" src="images/contactus.jpg" alt="">
+        </div>
+    </div>
 <%- include('partials/footer') %>

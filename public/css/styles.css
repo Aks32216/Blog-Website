@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Dancing+Script:wght@500&family=El+Messiri&family=Encode+Sans+Condensed:wght@300&family=Michroma&family=Monoton&family=Source+Serif+4:ital@1&display=swap');
+/* font-family: 'Cinzel Decorative', cursive;
+font-family: 'Michroma', sans-serif;
+font-family: 'Source Serif 4', sans-serif;
+font-family: 'Encode Sans Condensed', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Monoton', cursive; */
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -13,6 +22,90 @@
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
+}
+
+.navbar-brand{
+    font-family: 'Monoton', cursive;
+    font-size: 200%;
+}
+
+
+.headfoot{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+h1{
+    font-family: 'Source Serif 4', sans-serif;
+    color: #1abc9c;
+}
+
+h3{
+    font-family: 'Source Serif 4', sans-serif;
+    
+}
+
+.startBlog>h1{
+    margin: 5rem 0 1.5rem 0;
+    color: #1abc9c;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    background-color: #1abc9c;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.writings{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 120%;
+}
+
+.aboutSection{
+    margin: 2rem 0;
+    padding: 5rem 0 2rem 0;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.about-img{
+    height: 40%;
+    width: 40%;
+}
+
+.aboutButton{
+    background-color: #1abc9c;
+    margin: 4rem 0;
+}
+
+.contactSection{
+    display: flex;
+}
+
+.form{
+    width: 50%;
+}
+
+.contact-img-div{
+    width: 50%;
+}
+
+
+.contact-img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.contactButton{
+    background-color: #1abc9c;
+    margin: 1.5rem 0;
 }
 
 .footer-padding {
@@ -33,3 +126,4 @@
 	font-size: 12px;
   color: #fff;
 }
+
