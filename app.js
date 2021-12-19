@@ -6,7 +6,7 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongose=require("mongoose");
 
-mongose.connect("mongodb://127.0.0.1:27017/blogWebsite",{useNewUrlParser:true})
+mongose.connect("mongodb+srv://Amish32216:Aks_32216@cluster0.tp1su.mongodb.net/blogWebsite",{useNewUrlParser:true})
 
 const itemSchema={
   title:String,
