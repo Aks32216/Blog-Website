@@ -1,12 +1,11 @@
 //jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongose=require("mongoose");
 
-mongose.connect("mongodb+srv://Amish32216:Aks_32216@cluster0.tp1su.mongodb.net/blogWebsite",{useNewUrlParser:true})
+mongose.connect("mongodb+srv://Amish32216:aks32216@cluster0.tp1su.mongodb.net/blogWebsite",{useNewUrlParser:true})
 
 const itemSchema={
   title:String,
